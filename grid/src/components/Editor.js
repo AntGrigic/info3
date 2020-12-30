@@ -13,12 +13,15 @@ function Editor() {
 
     function initializeDrawingPanel() {
         if ((panelWidth === panelHeight) && (panelWidth >= 16 && panelWidth <= 64) && (panelHeight >= 16 && panelHeight <= 64)) {
-        setHideOptions(!hideOptions);
-        setHideDrawingPanel(!hideDrawingPanel);
+            setHideOptions(!hideOptions);
+            setHideDrawingPanel(!hideDrawingPanel);
 
-        buttonText === "start drawing" 
-            ? setButtonText("reset") 
-            : setButtonText("start drawing");
+            buttonText === "start drawing" 
+                ? setButtonText("reset") 
+                : setButtonText("start drawing");
+        }
+        else {
+            alert("Please eneter number in range of 16 and 64 and both numbers needed to be the same!")
         }
     }
 

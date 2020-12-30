@@ -4,7 +4,7 @@ import '../styles/Pixel.scss';
 export default function Pixel(props) {
   const { selectedColor } = props;
 
-  const [pixelColor, setPixelColor] = useState("#B8B8B8");
+  const [pixelColor, setPixelColor] = useState("#fff");
   const [oldColor, setOldColor] = useState(pixelColor);
   const [canChangeColor, setCanChangeColor] = useState(true);
 

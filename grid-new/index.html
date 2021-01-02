@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div id="editor">
+        <div id="gridOptions">
+            <h1>Grid editor</h1>
+            <h2>Enter panel size</h2>
+            <div id="options">
+                <div id="option">
+                    <input
+                        type="number"
+                        id="panelInput"
+                        min="16"
+                        max="64"
+                        defaultValue="16"
+                        placeholder="16-64"
+                    />
+                    <input
+                        type="color"
+                        name="colorPick"
+                        id="colorPick"
+                    />
+                </div>
+            </div>
+            <label id="rgb-label">
+                Turn off RGB-color
+                <input
+                    type="checkbox"
+                    id="rgb"
+                    name="rbgColor"
+                    value="false"
+                    class="rgbSwitch"
+                />
+            </label>
+            <button id="buttonCreate">Create Grid</button>
+        </div>
+        <div id="grid"></div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
